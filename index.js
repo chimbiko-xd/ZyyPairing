@@ -26,13 +26,13 @@ const rl = readline.createInterface({
 });
 const question = (text) => new Promise((resolve) => rl.question(text, resolve));
 
-CFonts.say("Zyy Pairing", {
+CFonts.say("ChrisSpark-XMD", {
   font: "tiny",
   align: "center",
   colors: ["system"],
 });
 CFonts.say(
-  "Simple To Connect Whatsapp Bot Use Pairing Code\nWith Baileys Library\n\nGithub : https://github.com/rizzlogy/zyypairing",
+  "Simple To Connect Whatsapp Bot Use Pairing Code\nWith Baileys Library\n\nGithub : https://github.com/Chimbiko-xd/CHRISSPARK-XMD",
   {
     colors: ["system"],
     font: "console",
@@ -46,14 +46,14 @@ async function main() {
     console.log(chalk.greenBright("Clearing up session"));
     await fs.emptyDir(path.join(__dirname, sessionName));
     await delay(800);
-    ZyyPairing();
+    ChrisSpark-XMD ();
   } else {
     console.log(chalk.greenBright("Starting Code Pairing"));
-    ZyyPairing();
+    ChrisSpark-XMD ();
   }
 }
 
-async function ZyyPairing() {
+async function ChrisSpark-XMD () {
   const { state, saveCreds } = await useMultiFileAuthState("./" + sessionName);
   try {
     const socket = makeWASocket({
